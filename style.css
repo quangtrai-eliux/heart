@@ -1,0 +1,92 @@
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.app-js {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  background-color: rgba(52, 152, 219, 1);
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(52, 152, 219, 1);
+}
+.heart:before {
+  bottom: 0px;
+  left: -100px;
+}
+.heart:after {
+  top: -100px;
+  right: 0px;
+} */
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-image: linear-gradient(
+    bottom,
+    rgb(255, 204, 204) 0%,
+    rgb(245, 130, 130) 84%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(255, 204, 204) 0%,
+    rgb(245, 130, 130) 84%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(255, 204, 204) 0%,
+    rgb(245, 130, 130) 84%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(255, 204, 204) 0%,
+    rgb(245, 130, 130) 84%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(255, 204, 204) 0%,
+    rgb(245, 130, 130) 84%
+  );
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(255, 204, 204)),
+    color-stop(0.84, rgb(245, 130, 130))
+  );
+}
